@@ -8,16 +8,15 @@ Esses dados podem ser utilizados em estudos de **ciência de dados, estatística
 ---
 
 ## 📂 Estrutura do Projeto  
-
+```
 ├── data
 │   └── raw              # Dados brutos baixados da ANAC (CSV)
-│       ├── VRA_20001.csv
-│       ├── VRA_20233.csv
-│       └── VRA_20243.csv
+│       ├── arquivos_baixados.csv
 ├── notebooks
 │   └── download.ipynb   # Notebook para download e pré-processamento
 ├── requirements.txt     # Dependências do projeto
 ├── README.md            # Documentação do projeto
+```
 
 ## ⚙️ Premissas
 - O projeto considera como ponto de partida o ano 2000, quando a ANAC começou a disponibilizar os dados públicos.
