@@ -1,9 +1,49 @@
-# Download de dados de voos anac
+# 📊 Download de Dados de Voos da ANAC  
 
-## Objetivo
+## 📌 Objetivo  
+O objetivo deste projeto é realizar o download e disponibilização do histórico de voos, dados públicos fornecidos pela [ANAC](https://www.gov.br/anac/pt-br) em formato **CSV**.  
 
-O objetivo do projeto e fazer o download e disponibilização do histórico de voos, que são dados publicos disponibilizados pela anac em formato csv.
+Esses dados podem ser utilizados em estudos de **ciência de dados, estatística, análise de transporte aéreo** e visualizações.  
 
-## Premissas do Projeto
+---
 
-Se tem como premissa principal nesse projeto a data de disponibilização que vamos utilizar o ano de 2000 onde começa a disponibilização de dados publicos
+## 📂 Estrutura do Projeto  
+
+├── data
+│   └── raw              # Dados brutos baixados da ANAC (CSV)
+│       ├── VRA_20001.csv
+│       ├── VRA_20233.csv
+│       └── VRA_20243.csv
+├── notebooks
+│   └── download.ipynb   # Notebook para download e pré-processamento
+├── requirements.txt     # Dependências do projeto
+├── README.md            # Documentação do projeto
+
+# ⚙️ Premissas
+- O projeto considera como ponto de partida o ano 2000, quando a ANAC começou a disponibilizar os dados públicos.
+- Os arquivos são baixados em formato CSV e armazenados na pasta data/raw.
+- O objetivo inicial é criar uma base organizada para análises futuras.
+
+# 🛠️ Como Usar
+
+## 1. Clone o repositório
+
+```
+git clone https://github.com/seu-usuario/seu-repositorio.git
+cd seu-repositorio
+```
+
+## 2. Crie um ambiente virtual e instale as dependências
+
+```
+python -m venv venv
+source venv/bin/activate   # Linux/Mac
+venv\Scripts\activate      # Windows
+
+pip install -r requirements.txt
+
+```
+
+## 3. Execute o notebook de download
+
+Abra o arquivo notebooks/download.ipynb no Jupyter ou no VSCode e rode as células para baixar os arquivos CSV.
