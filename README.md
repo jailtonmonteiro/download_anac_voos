@@ -28,8 +28,7 @@ Esses dados podem ser utilizados em estudos de **ciência de dados, estatística
 ### 1. Clone o repositório
 
 ```
-git clone https://github.com/seu-usuario/seu-repositorio.git
-cd seu-repositorio
+git clone https://github.com/jailtonmonteiro/download_anac_voos.git
 ```
 
 ### 2. Crie um ambiente virtual e instale as dependências
